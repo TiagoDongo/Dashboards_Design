@@ -8,10 +8,10 @@ new Chart(ctx, {
         datasets:[{
             label: 'Time',
             data: [8, 6, 7, 6, 10, 8, 4],
-            backgroundColor: '#d6d3d6',
+            backgroundColor: '#888888',
             borderWidth: 3,
             borderRadius: 6,
-            hoverBackgroundColor: '#60a5fa',
+            hoverBackgroundColor: '#f0f8ff',
         }]
     },
     options: {
