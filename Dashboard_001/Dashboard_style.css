@@ -252,8 +252,8 @@ body{
 
 .botton-container{
     display: flex;
-    gap: 20px;
-    padding: 30px;
+    gap: 25px;
+    padding: 40px;
 }
 
 .botton-container .prog-status,
@@ -272,7 +272,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .botton-container .prog-status .header h4,
@@ -302,6 +302,7 @@ body{
 
 .botton-container .prog-status .details{
     display: flex;
+    justify-content: space-around;
     margin-bottom: 30px;
     gap: 20px;
 }
@@ -309,17 +310,21 @@ body{
 .botton-container .prog-status .details .item h2{
     font-size: 30px;
     font-weight: 400;
+    align-items: center;
+    justify-content: center;
 }
 
 .botton-container .prog-status .details .item p{
     font-size: 13px;
     color: #9b9b9b;
+    justify-content: center;
+    align-items: center;
 }
 
 .botton-container .prog-status .details .separator{
     width: 2px;
     height: 70px;
-    background: f3f3f3;
+    background: #fff;
 }
 
 .botton-container .courses{
