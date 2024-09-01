@@ -9,7 +9,7 @@
 
 a{
     text-decoration: none;
-    color: #f1f3f2;
+    color: #f5f5f5;
     font-size: 14px;
 }
 
@@ -23,11 +23,400 @@ img{
 }
 
 body{
-    background: #f1f3f2;
+    background: #f5f5f5;
 }
 
 .top-container{
-    background: #031224;
+    background: #666666;
     border-radius: 0 0 30px 30px;
     padding-bottom: 10px;
 }
+
+.top-container .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 14px;
+    border-bottom: 2px solid #444444;
+}
+
+.top-container .nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.top-container .nav .logo i{
+    color: #f5f5f5;
+    font-size: 20px;
+}
+
+.top-container .nav .logo a{
+    font-size: 16px;
+}
+
+.top-container .nav .links{
+    display: flex;
+    gap: 20px;
+}
+
+.top-container .nav .links a{
+    color: #000;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.top-container .nav .links a:hover{
+    color: #fff;
+}
+
+.top-container .nav .right-section{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-container .nav .right-section > i{
+    color: #f5f5f5;
+    background: #444444;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.top-container .nav .right-section .profile{
+    display: flex;
+    align-items: center;
+    background: #444444;
+    padding: 0 10px;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+.top-container .nav .right-section .profile .info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-container .nav .right-section .profile .info img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #f5f5f5
+}
+
+.top-container .nav .right-section .profile .info a{
+    font-size: 13px;
+}
+
+.top-container .nav .right-section .profile .info p{
+    font-size: 13px;
+    color: #ccc;
+}
+
+.top-container .nav .right-section .profile .info > i{
+    color: #f5f5f5;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.top-container .status{
+    padding: 20px 20px 10px;
+}
+
+.top-container .status .header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top-container .status .header h4{
+    color: #f5f5f5;
+    font-weight: 500;
+}
+
+.top-container .status .header h4#big{
+    flex: 3;
+}
+
+.top-container .status .header h4#small{
+    flex: 1;
+    padding-left: 90px;
+}
+
+.top-container .status .item-list{
+    display: flex;
+    align-items: center;
+    gap:  14px;
+}
+
+.top-container .status .item-list .item{
+    background: #e0f2fe;
+    width: 25%;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.top-container .status .item-list .item:nth-child(2){
+    background: #fffbeb;
+}
+
+.top-container .status .item-list .item:nth-child(3){
+    background: #bfdbfe;
+}
+
+.top-container .status .item-list .item:nth-child(4){
+    background: #666666;
+    padding: 10px;
+}
+
+.top-container .status .item-list .item .info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.top-container .status .item-list .item .info h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.top-container .status .item-list .item .info p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.top-container .status .item-list .item .info > i{
+    font-size: 20px;
+    padding: 10px;
+    background: #666666;
+    color: #f5f5f5;
+    border-radius: 50%;
+}
+
+.top-container .status .item-list .item .progress{
+    position: relative;
+    height: 10px;
+    background: #b7c0cd;
+    border-radius: 10px;
+}
+
+.top-container .status .item-list .item .progress .bar{
+    width: 0%;
+    height: 10px;
+    background: #666666;
+    border-radius: 10px;
+}
+
+.top-container .status .item-list .item .progress::before{
+    content: "0%";
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.top-container .status .item-list .item:nth-child(2) .progress{
+    background: #d6d3d6;
+}
+
+.top-container .status .item-list .item:nth-child(2) .progress .bar{
+    width: 3.3%;
+}
+
+.top-container .status .item-list .item:nth-child(2) .progress::before{
+    content: "3.3%";
+}
+
+
+.top-container .status .item-list .item:nth-child(3) .progress{
+    background: #94a3b8;
+}
+
+.top-container .status .item-list .item:nth-child(3) .progress .bar{
+    width: 6.76%;
+}
+
+.top-container .status .item-list .item:nth-child(3) .progress::before{
+    content: "6.76%";
+}
+
+
+
+.botton-container{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.botton-container .prog-status,
+.botton-container .courses{
+    background: #e8ebf0;
+    padding: 20px;
+    border-radius: 24px;
+}
+
+.botton-container .prog-status{
+    width: 50%;
+}
+
+.botton-container .prog-status .header,
+.botton-container .courses .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.botton-container .prog-status .header h4,
+.botton-container .courses .header h4{
+    font-weight: 600;
+}
+
+.botton-container .prog-status .header .tabs{
+    background: #ccc;
+    padding: 4px;
+    border-radius: 28px;
+    display: flex;
+    gap: 5px;
+}
+
+.botton-container .prog-status .header .tabs a{
+    padding: 4px 20px;
+    font-size: 12px;
+    color: #000;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.botton-container .prog-status .header .tabs a.active{
+    background: #fff;
+}
+
+.botton-container .prog-status .details{
+    display: flex;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.botton-container .prog-status .details .item h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.botton-container .prog-status .details .item p{
+    font-size: 13px;
+    color: #9b9b9b;
+}
+
+.botton-container .prog-status .details .separator{
+    width: 2px;
+    height: 70px;
+    background: f3f3f3;
+}
+
+.botton-container .courses{
+    width: 25%;
+}
+
+.botton-container .courses .header{
+    margin-bottom: 40px;
+}
+
+.botton-container .courses .header a{
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    padding: 4px 8px;
+    background: #f3f3f3;
+    border-radius: 20px;
+}
+
+.botton-container .courses > img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.botton-container .courses .audio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.botton-container .courses .audio i{
+    font-size: 26px;
+    background: #eff6ff;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.botton-container .courses .audio a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    line-height: 18px;
+}
+
+.botton-container .courses > p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.botton-container .courses .listen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botton-container .courses .listen .author{
+    padding: 6px 10px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.botton-container .courses .listen .author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.botton-container .courses .listen .author a{
+    font-size: 14px;
+    color: #000;
+}
+
+.botton-container .courses .listen .author p{
+    font-size: 12px;
+    color: #9b9b9b;
+}
+
+.botton-container .courses .listen button{
+    border: none;
+    color: #fff;
+    background: #031224;
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.botton-container .courses .listen button i{
+    font-size: 16px;
+}
+

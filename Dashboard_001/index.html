@@ -17,10 +17,10 @@
 
             <div class="logo">
                 <i class="fa-solid fa-code"></i>
-                <a href="#">TiagoDongo</a>
+                <a href="#">White_Wolf</a>
             </div>
 
-            <div class="nav-links">
+            <div class="links">
                 <a href="#">Dashboard</a>
                 <a href="#">Statistics</a>
                 <a href="#">Courses</a>
@@ -33,10 +33,10 @@
 
                 <div class="profile">
                     <div class="info">
-                        <img src="">
+                        <img src="assets/AvatarMaker.png">
                         <div>
                             <a href="#">TiagoDongo</a>
-                            <p>Computer Engeneering Student</p>
+                            <p>Software Engineering Student</p>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-down"></i>
@@ -59,9 +59,9 @@
                             <p>- 1 Project to do</p>
                         </div>
                         <i class="fa-brands fa-bots"></i>
-                        <div class="progress">
-                            <div class="bar"></div>
-                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
                     </div>
                 </div>
 
@@ -73,9 +73,9 @@
                             <p>- 1 Project to do</p>
                         </div>
                         <i class="fa-brands fa-js"></i>
-                        <div class="progress">
-                            <div class="bar"></div>
-                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
                     </div>
                 </div>
 
@@ -87,22 +87,117 @@
                             <p>- 106 Lessons left</p>
                         </div>
                         <i class="fa-brands fa-python"></i>
-                        <div class="progress">
-                            <div class="bar"></div>
-                        </div>
                     </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
 
-                    <div class="item">
-                        <canvas class="activity-chart"></canvas>
-                    </div>
+                <div class="item">
+                    <canvas class="activity-chart"></canvas>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="botton-container">
-        
+        <div class="prog-status">
+            <div class="header">
+                <h4>Learning Progress</h4>
+                <div class="tabs">
+                    <a href="#" class="active">1Y</a>
+                    <a href="#">6M</a>
+                    <a href="#">3M</a>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="item">
+                    <h2>13.38</h2>
+                    <p>Personal Grade Average</p>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="item">
+                    <h2>15.6</h2>
+                    <p>Class Grade Avarage</p>
+                </div>
+            </div>
+            <canvas class="prog-chart"></canvas>
+        </div>
+
+
+
+        <div class="courses">
+            <div class="header">
+                <h4>Watching</h4>
+                <a href="#"># JavaScript</a>
+            </div>
+            <img src="assets/tumb.jpg">
+            <div class="audio">
+                <i class="fa-solid fa-microphone"></i>
+                <a href="#">Curso grátis de JavaScript e ECMAScript para iniciantes</a>
+            </div>
+            <p>Curso de linguagem JavaScript, voltado para iniciantes e para quem quiser aprender mais sobre ECMAScript, a versão padronizada do JS</p>
+            <div class="listen">
+                <div class="author">
+                    <img src="assets/GustavoGuanabara.jfif">
+                    <div>
+                        <a href="#">Gustavo Guanabara</a>
+                        <p>Technology Instructor</p>
+                    </div>
+                </div>
+                <button>Play<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+
+
+        <div class="recomendations">
+            <div class="header">
+                <h4>You may like it</h4>
+            </div>
+
+            <div class="playlist-recomendations">
+                <div class="items">
+                    <div>
+                        <i class="fa-solid fa-play"></i>
+                        <div class="playlist-info">
+                            <a href="#">Inteligência Artificial</a>
+                            <p>Curso grátis de inteligência artificial - Módulo 01</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div class="items">
+                    <div>
+                        <i class="fa-solid fa-play"></i>
+                        <div class="playlist-info">
+                            <a href="#">Unity for beginners</a>
+                            <p>A Unity tutorial series for people who are complete beginners and want to start learning how to make video games</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div class="items">
+                    <div>
+                        <i class="fa-solid fa-play"></i>
+                        <div class="playlist-info">
+                            <a href="#">Machine learning</a>
+                            <p>The basics of machine learning</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </div>
+
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="graph.js"></script>
 </body>
 </html>
