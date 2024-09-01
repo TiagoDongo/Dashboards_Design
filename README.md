@@ -1,30 +1,35 @@
-<h2 align=center>Dashboards Designs</h2>
+<div  align=center>
+ <h2>Dashboards Designs</h2>
+ <p>Este repositório é uma coleção layouts e designs para dashboards. Atualmente, o repositório está em fase inicial de desenvolvimento</p>
+</div>
 
- <h3>Índice</h3> 
+<div align=justify>
+ <h3>Índice</h3>
  
- * Sobre
  * Tecnologias
  * Projetos
  * Contribuições
  * Licença
+</div>
 
- <h3>Sobre</h3>
+<div align=justify>
+<h2>Tecnologias</h2>
+<img height='45px' width='45px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+<img height='45px' width='45px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+<img height='45px' width='45px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+</div>          
+
+
+<div>
+<h2 align=justify>Projetos</h2>
  
-<p>Este repositório é uma coleção layouts e designs para dashboards. Atualmente, o repositório está em fase inicial de desenvolvimento</p>
+ * <a href="https://github.com/TiagoDongo/Dashboards_Design/tree/main/Learning%20Progress%20Dashboard">Learning Progress Dashboard</a>
+</div>
 
-<h3>Tecnologias</h3>
 
-* HTML: Para a estrutura básica dos dashboards.
-* CSS: para estilo e layout.
-* JavaScript: Para interatividade e conteúdo dinamico.
-* Chart.js: Para visualização de dados
+<div align=justify>
+<h3>Contribuições e Licença</h3> 
 
-<h3>Projetos</h3>
-
-* Learning Progress Dashboard
-
-<h3>Contribuições</h3>
-<p>Contribuições são bem-vindas! Se tiver sugestões ou melhorias, fique à vontade para abrir um pull request.</p>
-
-<h3>Licença</h3>
-<p> Os projetos deste repositorio estão licenciados sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes</p>
+* <p>Contribuições são bem-vindas! Se tiver sugestões ou melhorias, fique à vontade para abrir um pull request.</p>
+* <p>Os projetos deste repositorio estão licenciados sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes</p>
+</div>
