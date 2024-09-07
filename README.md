@@ -28,7 +28,7 @@
 
 
 <div align=justify>
-<h3>Contribuições e Licença</h3> 
+<h2>Contribuições e Licença</h2> 
 
 * <p>Contribuições são bem-vindas! Se tiver sugestões ou melhorias, fique à vontade para abrir um pull request.</p>
 * <p>Os projetos deste repositorio estão licenciados sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes</p>
