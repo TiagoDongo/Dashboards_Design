@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+
+    --color-background: #181a1e;
+    --color-dark: #202528;
+    --color-dark-variant: #677483;
+    --color-white: #f5f5f5;
+    --color-p: #a3bdcc;
+
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.4rem;
+    --padding-1: 1.2rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+a{
+    color: var(--color-dark-variant);
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+h1{
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--color-dark-variant);
+}
+
+h2{
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--color-dark-variant);
+}
+
+h3{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-dark-variant);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+/*--------------------------------------*/
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 28px;
+    grid-template-columns: 12rem auto 23rem;
+}
+
+/*--------  sidebar --------------*/
+aside{
+    height: 100vh;
+}
+
+aside .toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+aside .toggle .logo{
+    display: flex;
+    gap: 8px;
+}
+
+aside .toggle .logo img{
+    width: 36px;
+    height: 36px;
+    border-radius: 14px;
+}
+
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark);
+    box-shadow: var(--box-shadow);
+    border: 15px;
+    border-radius: 16px;
+    height: 88vh;
+    position: relative;
+    top: 24px;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar:hover{
+    box-shadow: none;
+}
+
+aside .sidebar a{
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-variant);
+    height: 57px;
+    gap: 10px;
+    position: relative;
+    margin-left: 24px;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a span{
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+aside .sidebar a.active{
+    width: 100%;
+    color: var(--color-primary);
+    background-color: var(--color-light);
+    margin-left: 0;
+}
+
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 18px;
+    background-color: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: 12px
+}
+
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 10px;
+}
+
+aside .sidebar .notifications{
+    background-color: var(--color-danger);
+    padding: 2px 6px;
+    color: var(--color-dark);
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+/*----------------------main-------------------------*/
+
+main{
+    margin-top: 20px;
+}
+
+
+main .taskboard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+main .taskboard > div{
+    background-color: var(--color-dark);
+    padding: 24px;
+    border-radius: 22px;
+    margin-top: 10px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .taskboard > div:hover{
+    box-shadow: none;
+}
+
+main .taskboard > div .status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .taskboard h3{
+    margin-left: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .taskboard h3:hover{
+    color: var(--color-primary);
+}
+
+main .taskboard .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-dark-variant);
+}
+
+main .taskboard .info i{
+    color: var(--color-dark-variant);
+    font-size: 30px;
+}
+
+main .taskboard .quantity{
+    color: var(--color-dark-variant);
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+main .taskboard .quantity > h1{
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+    border: 1px solid var(--color-dark);
+    border-radius: 14px;
+    padding: 10px 10px 6px;
+}
+
+main .taskboard .tasks-concluded i{
+    color: var(--color-success);
+}
+
+main .taskboard .tasks-concluded .quantity > h1{
+    background-color: var(--color-success);
+    color: var(--color-dark);
+}
+
+main .taskboard .to-do i{
+    color: var(--color-danger);
+}
+
+main .taskboard .to-do .quantity > h1{
+    background-color: var(--color-danger);
+    color: var(--color-dark);
+}
+
+main .taskboard .pending-reviews i{
+    color: var(--color-warning);
+}
+
+main .taskboard .pending-reviews .quantity > h1{
+    background-color: var(--color-warning);
+    color: var(--color-dark);
+}
+
+main .coworkers{
+    margin-top: 16px;
+}
+
+main .coworkers .team-list{
+    background-color: var(--color-dark);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .coworkers .team-list:hover{
+    box-shadow: none;
+}
+
+main .coworkers .team-list .member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .coworkers .team-list .member img{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.4rem;
+    border-radius: 50%;
+}
+
+main .coworkers .team-list .member i{
+    color: var(--color-success);
+    margin-right: 4px;
+}
+
+main .meetings{
+    margin-top: 16px;
+    color: var(--color-dark-variant)
+}
+
+main .meetings h2{
+    margin-bottom: 8px;
+}
+
+main .meetings table{
+    background-color: var(--color-dark);
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+}
+
+
+main .meetings table  td{
+    height: 14px;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tr:last-child td{
+    border: none;
+}
+
+main .recent-orders a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+main .separator{
+    padding: 6px;
+}
+
+.right{
+    margin-top: 16px;
+}
+
+
+.right .user-profile{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    background-color: var(--color-dark);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right .user-profile:hover{
+    box-shadow: none;
+}
+
+.right .user-profile img{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+}
+
+.right .tools{
+    margin-top: 16px;
+}
+
+.right .tools .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    color: var(--color-dark-variant);
+}
+
+.right .tools .header span{
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-dark);
+    border-radius: 50%;
+    color: var(--color-dark-variant);
+}
+
+.right .tools .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-dark);
+    padding: 1.4rem;
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right .tools .nav-links:hover{
+    box-shadow: none;
+}
+
+.right .tools .nav-links .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .tools .nav-links .link i{
+    font-size: 20px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 8px;
+    border: 1px solid var(--color-dark-variant);
+    border-radius: var(--border-radius-1);
+    transition: all 0.3s ease;
+}
+
+.right .tools .nav-links .link i:hover{
+    background-color: var(--color-dark-variant);
+}
+
+.right .more{
+    display: flex;
+    background-color: var(--color-dark);
+    margin-top: 16px;
+    padding: 2.8rem;
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.right .more:hover{
+    box-shadow: none;
+}
+
+.right .more .items{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.right .more .add,
+.right .more .plus{
+    color: var(--color-dark-variant);
+}
+
+.right .more .plus > i{
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 95%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main .taskboard{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .coworkers .team-list .member{
+        flex-basis: 40%;
+    }
+
+    main .meetings{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 0.8rem;
+    }
+
+    main .meetings table{
+        width: 83vw;
+    }
+
+    main table thead tr th:nth-child(2),
+    main table thead tr th:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: var(--padding-1);
+    }
+
+    aside{
+        position: fixed;
+        background-color: var(--color-dark);
+        width: 15rem;
+        z-index: 3;
+        box-shadow: var(--box-shadow);
+        height: 100vh;
+        left: -100%;
+        display: none;
+    }
+
+
+    aside .logo h2{
+        display: inline;
+    }
+
+    aside .sidebar h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    main{
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+    main .coworkers .team-list .member{
+        flex-basis: 35%;
+    }
+
+    main .meetings{
+        position: relative;
+        margin: 2rem 0 0 0;
+        width: 100%;
+    }
+
+    main .meetings table{
+        width: 100%;
+        margin: 0;
+    }
+
+    .right{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+}

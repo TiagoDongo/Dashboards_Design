@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <title>Task Dashboard | TiagoDongo</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!----- SIDEBAR -----> 
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="img/00268.png">
+                    <h2>White<span class="danger">Wolf</span></h2>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person
+                    </span>
+                    <h3>User</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        history
+                    </span>
+                    <h3>History</h3>
+                </a>
+
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        assignment
+                    </span>
+                    <h3>Taskboard</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail
+                    </span>
+                    <h3>Message</h3>
+                    <span class="notifications">15</span>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        check_circle_outline
+                    </span>
+                    <h3>Finished Tasks</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!----- END SIDEBAR ----->
+
+        <!-----------MAIN------------>
+        <main>
+            <h1>Tasks</h1>
+
+            <!--TASKBOARD-->
+            <div class="taskboard">
+                <div class="tasks-concluded">
+                    <div class="status">
+                        <div class="info">
+                            <h1><i class="fa-regular fa-circle-check"></i></h1>
+                            <h3>Total Finished</h3>
+                        </div>
+                        <div class="quantity">
+                            <h1>33</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="to-do">                    
+                    <div class="status">
+                        <div class="info">
+                            <h1><i class="fa-regular fa-clipboard"></i></h1>
+                            <h3>To Do</h3>
+                        </div>
+                        <div class="quantity">
+                            <h1>7</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--    END OF TASKBOARD    -->
+
+                <div class="pending-reviews">                    
+                    <div class="status">
+                        <div class="info">
+                            <h1><i class="fa-solid fa-triangle-exclamation"></i></h1>
+                            <h3>Pending Reviews</h3>
+                        </div>
+                        <div class="quantity">
+                            <h1>2</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- WORK TEAM -->
+            <div class="coworkers">
+                <h2>Team</h2>
+
+                <div class="team-list">
+                    <div class="member">
+                        <img src="img/hunter-newton-mfQ-e_HVCR8-unsplash.jpg">
+                        <h2>Thiago</h2>
+                        <p><i class="fa-solid fa-circle"></i>30 Min Ago</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/charlesdeluvio-kVg2DQTAK7c-unsplash.jpg">
+                        <h2>Rafael</h2>
+                        <p><i class="fa-solid fa-circle"></i>1 hour ago</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/aiony-haust-3TLl_97HNJo-unsplash.jpg">
+                        <h2>Emely</h2>
+                        <p><i class="fa-solid fa-circle"></i>Online</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/courtney-cook-TSZo17r3m0s-unsplash.jpg">
+                        <h2>Debora</h2>
+                        <p><i class="fa-solid fa-circle"></i>20 hours ago</p>
+                    </div>
+                </div>
+            </div>
+            <!--    END OF COWORKERS    -->
+
+            <!--    MEETINGS    -->
+            <div class="meetings">
+                <h2>Meetings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Team Progress</th>
+                            <th><i class="fa-regular fa-clock"></i> 9:00</th>
+                            <th>Entire team</th>
+                            <th>Progress and feedback</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="separator"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task Planning</th>
+                            <th><i class="fa-regular fa-clock"></i> 11:30</th>
+                            <th>Project manager and team</th>
+                            <th>Allocation of new tasks</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <!--    END OF MEETINGS     -->
+        </main>
+        <!--    END OF MAIN  -->
+
+        <!-- RIGHT SECTION  -->
+        <div class="right">
+            <!--    USER PROFILE   -->
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="img/AvatarMaker.png">
+                    <h2>TiagoDongo</h2>
+                    <p>Computer Engineering student</p>
+                </div>
+            </div>
+            <!--    END OF USER PROFILE -->
+
+            <!-- QUICK LINKS -->
+            <div class="tools">
+                <div class="header">
+                    <h2>Quick Links</h2>
+                    <span class="material-icons-sharp">
+                        insert_link
+                    </span>
+                </div>
+
+                <div class="nav-links">
+                    <div class="link">
+                        <a href="#">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="#">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="#">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--    END OF QUICK LINKS  -->
+
+            <div class="more">
+                <div class="items">
+                    <div class="plus">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="add">
+                        <h3>Add More</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
