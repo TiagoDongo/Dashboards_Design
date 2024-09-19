@@ -24,6 +24,7 @@
 <h2 align=justify>Projetos</h2>
  
  * <a href="https://github.com/TiagoDongo/Dashboards_Design/tree/main/Learning%20Progress%20Dashboard">Learning Progress Dashboard</a>
+ * <a href="https://github.com/TiagoDongo/Dashboards_Design/tree/main/Task%20Dashboard">Task Dashboard</a>
 </div>
 
 
