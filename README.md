@@ -1,36 +1,11 @@
-<div  align=center>
- <h2>Dashboards Designs</h2>
- <p>Este repositório é uma coleção layouts e designs para dashboards. Atualmente, o repositório está em fase inicial de desenvolvimento</p>
-</div>
+# Dashboards Designs
+Este repositório é uma coleção layouts e designs para dashboards. 
 
-<div align=justify>
- <h3>Índice</h3>
- 
- * Tecnologias
- * Projetos
- * Contribuições
- * Licença
-</div>
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+---
 
-<div align=justify>
-<h2>Tecnologias</h2>
-<img height='45px' width='45px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-<img height='45px' width='45px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-<img height='45px' width='45px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-</div>          
-
-
-<div>
-<h2 align=justify>Projetos</h2>
- 
- * <a href="https://github.com/TiagoDongo/Dashboards_Design/tree/main/Learning%20Progress%20Dashboard">Learning Progress Dashboard</a>
- * <a href="https://github.com/TiagoDongo/Dashboards_Design/tree/main/Task%20Dashboard">Task Dashboard</a>
-</div>
-
-
-<div align=justify>
-<h2>Contribuições e Licença</h2> 
-
-* <p>Contribuições são bem-vindas! Se tiver sugestões ou melhorias, fique à vontade para abrir um pull request.</p>
-* <p>Os projetos deste repositorio estão licenciados sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes</p>
-</div>
+## Projects
+- [Learning Progress Dashboard](https://github.com/TiagoDongo/Dashboards_Design/tree/main/Learning%20Progress%20Dashboard)
+- [Task Dashboard](https://github.com/TiagoDongo/Dashboards_Design/tree/main/Task%20Dashboard)
