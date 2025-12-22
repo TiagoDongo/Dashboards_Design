@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"/>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Task Admin DashBoard | TiagoDongo</title>
+</head>
+<body>
+    <div class="container">
+        <!-- sidebar -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <i class="ri-check-double-fill"></i>
+                    <h2>Tiago<span class="danger">Dongo</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <i class="ri-file-list-3-line"></i>
+                    <h3>Tasks</h3>
+                </a>
+                <a href="#" class="active">
+                    <i class="ri-dashboard-fill"></i>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <i class="ri-history-line"></i>
+                    <h3>History</h3>
+                </a>
+                <a href="#">
+                    <i class="ri-notification-3-line"></i>
+                    <h3>Notifications</h3>
+                    <span class="notifications">15</span>
+                </a>
+                <a href="#">
+                    <i class="ri-settings-3-line"></i>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <i class="ri-user-add-line"></i>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#" class="danger">
+                    <i class="ri-logout-circle-line"></i>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- end of sidebar -->
+
+        <!-- main -->
+        <main>
+            <!-- navbar -->
+            <nav>
+                <div class="right">
+                    <i class="ri-menu-fill"></i>
+                    <form action="#">
+                        <div class="form-input">
+                            <input type="search" placeholder="Search..." />
+                            <button class="search-btn" type="submit">
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="left">
+                    <div class="dark-mode">
+                        <i class="ri-sun-fill active"></i>
+                        <i class="ri-moon-fill"></i>
+                    </div>
+
+                    <div class="profile">
+                        <div class="info">
+                        <p>Hey, <b>Tiago</b></p>
+                        <small class="text-muted">User</small>
+                        </div>
+                        <div class="profile-photo">
+                        <img src="assets/image-profile.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end of navbar -->
+
+            <!-- insights -->
+            <ul class="insights">
+                <li>
+                <i class="ri-survey-line"></i>
+                <span class="info">
+                    <h3>1.074</h3>
+                    <p>Total Tasks</p>
+                </span>
+                </li>
+                <li>
+                <i class="ri-checkbox-circle-line"></i>
+                <span class="info">
+                    <h3>993</h3>
+                    <p>Concluded Tasks</p>
+                </span>
+                </li>
+                <li>
+                <i class="ri-alert-line"></i>
+                <span class="info">
+                    <h3>7</h3>
+                    <p>Up Tasks</p>
+                </span>
+                </li>
+                <li>
+                <i class="ri-close-circle-line"></i>
+                <span class="info">
+                    <h3>74</h3>
+                    <p>Failed Tasks</p>
+                </span>
+                </li>
+            </ul>
+            <!-- end of insights -->
+
+            <!-- resumes -->
+            <div class="resumes">
+                <!-- recents tasks -->
+                <div class="recents-tasks">
+                    <h2>Recents Tasks</h2>
+
+                    <ul class="tasks">
+                        <li>
+                            <div class="header">
+                                <div class="title">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark" ></span>
+                                    </label>
+                                    <h3>Review Prototype</h3>
+                                </div>
+                                <div class="actions">
+                                    <button type="submit">
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </button>
+                                    <button type="submit">
+                                        <i class="ri-pencil-line"></i>
+                                    </button>
+                                    <button type="submit">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam unde soluta officiis quae commodi fuga illo nemo, a rerum quisquam vero.</p>
+                        </li>
+                        <li>
+                            <div class="header">
+                                <div class="title">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark" ></span>
+                                    </label>
+                                    <h3>Implement new feature</h3>
+                                </div>
+                                <div class="actions">
+                                    <button type="submit">
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </button>
+                                    <button type="submit">
+                                        <i class="ri-pencil-line"></i>
+                                    </button>
+                                    <button type="submit">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p></p>
+                        </li>
+                        <li>
+                            <div class="header">
+                                <div class="title">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" />
+                                        <span class="checkmark" ></span>
+                                    </label>
+                                    <h3>Submit sprint</h3>
+                                </div>
+                                <div class="actions">
+                                    <button type="submit">
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </button>
+                                    <button type="submit">
+                                        <i class="ri-pencil-line"></i>
+                                    </button>
+                                    <button type="submit">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end of recents tasks-->
+
+                <!-- grapf -->
+                <div class="prog-status">
+                        <div class="header">
+                            <h2>Personal Progress</h2>
+                            <div class="tabs">
+                                <a href="#" class="active">1Y</a>
+                                <a href="#">6M</a>
+                                <a href="#">3M</a>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <div class="item">
+                                <h2>47</h2>
+                                <p>Record of tasks colcluded</p>
+                            </div>
+
+                            <div class="separator"></div>
+
+                            <div class="item">
+                                <h2>43</h2>
+                                <p>Record of failed tasks</p>
+                            </div>
+                        </div>
+                    <canvas class="prog-chart"></canvas>
+                </div>
+                <!-- end of grapf -->
+
+            </div>
+            <!-- end of resumes-->
+
+        </main>
+        <!-- end of main -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
