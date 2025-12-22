@@ -9,3 +9,4 @@ Este repositório é uma coleção layouts e designs para dashboards.
 ## Projects
 - [Learning Progress Dashboard](https://github.com/TiagoDongo/Dashboards_Design/tree/main/Learning%20Progress%20Dashboard)
 - [Task Dashboard](https://github.com/TiagoDongo/Dashboards_Design/tree/main/Task%20Dashboard)
+- [Task Admin Dashboard](https://github.com/TiagoDongo/Dashboards_Design/tree/main/Task%20Admin%20dashboard)
